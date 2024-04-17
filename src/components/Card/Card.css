@@ -1,0 +1,77 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	width: 17rem;
+	height: 24rem;
+	border: solid 2px transparent;
+	border-radius: 10px;
+}
+.card-upper * {
+	padding: 1rem;
+}
+.card-image {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: solid 1px black;
+}
+.card-image img {
+	width: 7.8rem;
+	height: 8.9rem;
+}
+.card-lower {
+	padding: 0rem 1rem 1rem 1rem;
+}
+.card-button-container {
+	display: flex;
+	gap: 0.5rem;
+	margin-top: 1rem;
+}
+
+.card-add-to-cart-btn {
+	flex: 1;
+}
+.card-toggle-wishlist-btn {
+	padding: 0;
+	width: 2rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card:hover {
+	border: solid 2px black;
+}
+
+@media (max-width: 750px) {
+	.card {
+		width: 15rem;
+		height: 22rem;
+	}
+	.card-image {
+		padding: 0;
+	}
+	.card-image img {
+		width: 7rem;
+		height: 8rem;
+	}
+}
+@media (max-width: 500px) {
+	.card {
+		width: 11rem;
+		height: 17rem;
+	}
+	.card-image img {
+		width: 4rem;
+		height: 5rem;
+	}
+	.card-upper * {
+		padding: 0.5rem;
+	}
+	.card-lower {
+		padding: 0rem 0.5rem 0.5rem 0.5rem;
+	}
+}

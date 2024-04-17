@@ -1,0 +1,90 @@
+.slider {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+	margin-bottom: 4rem;
+}
+.slider-image {
+	max-height: 500px;
+	max-width: 90vw;
+	border-radius: 10px;
+}
+
+.slider-text {
+	font-weight: bold;
+	font-size: 1.5rem;
+	position: absolute;
+	width: 26rem;
+	text-align: center;
+	padding: 3rem;
+}
+.slider-text p {
+	margin: 2rem;
+}
+.slider-btn {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	text-decoration-color: black;
+}
+.slider-btn a {
+	text-decoration-color: black;
+}
+.slider-btn button:hover {
+	cursor: pointer;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0.7rem;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+	z-index: 10;
+	user-select: none;
+}
+.left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 0.7rem;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+	z-index: 10;
+	user-select: none;
+}
+
+.slide {
+	position: relative;
+	opacity: 0.3;
+	transition: all 1s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slide.active {
+	opacity: 1;
+	transition: all 1s ease;
+	transform: scale(1.03);
+}
+
+@media (max-width: 510px) {
+	.slider-text {
+		font-weight: bold;
+		font-size: 1.2rem;
+		width: 26rem;
+		padding: 3rem;
+	}
+	.slider-text p {
+		margin: 2rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+	.left-arrow,
+	.right-arrow {
+		font-size: 1.5rem;
+	}
+}
