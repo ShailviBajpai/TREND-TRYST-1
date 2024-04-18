@@ -60,7 +60,7 @@ const Login = () => {
         )}
       </Formik>
       <p>
-        Don't have an account? <Link to="/signup">Sign Up</Link>
+        Don't have an account? <Link to="/shopping-cart/signup">Sign Up</Link>
       </p>
     </div>
    </div>
