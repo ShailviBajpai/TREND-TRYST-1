@@ -14,20 +14,20 @@ export default function Header() {
                     <Link to="/">
                         <MdHome /> Home
                     </Link>
-                    <Link to="/login">
+                    <Link to="/shopping-cart/login">
                         <MdLogin /> User
                     </Link>
-                    <Link to="/wishlist">
+                    <Link to="/shopping-cart/wishlist">
                         <MdFavorite /> WishList
                     </Link>
-                    <Link to="/checkout">
+                    <Link to="/shopping-cart/checkout">
                         <MdShoppingCart color="white" /> Cart{`(${totalItems})`}
                     </Link>
                 </div>
             </div>
             <nav className="lower-nav">
-                <Link to="/men">Men</Link>
-                <Link to="/women">Women</Link>
+                <Link to="/shopping-cart/men">Men</Link>
+                <Link to="/shopping-cart/women">Women</Link>
             </nav>
         </header>
     );

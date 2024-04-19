@@ -111,7 +111,7 @@ const SignUp = () => {
                   className="error-message"
                 />
               </div>
-              {/* <Link to="/login"> */}
+              {/* <Link to="/shopping-cart/login"> */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
